@@ -19,7 +19,7 @@
       transform: scale(1, 2.4);
       // To apply linear-gradient property on text:
       background: linear-gradient(
-        180deg,
+        to bottom,
         $linear_gradient_two 50%,
         $linear_gradient_one 100%
       );
@@ -45,7 +45,7 @@
 
   .buttons {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     button {
       text-transform: uppercase;
       border-radius: 40px;
