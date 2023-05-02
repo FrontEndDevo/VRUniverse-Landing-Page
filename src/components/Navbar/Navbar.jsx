@@ -2,12 +2,12 @@ import classes from "./Navbar.module.scss";
 import hydra from "../../assets/images/Hydra.svg";
 const Navbar = () => {
   return (
-    <div className={classes.navbar}>
-      <div className={classes.logo}>
+    <nav className={classes.navbar}>
+      <div className={classes.hydra}>
         <img src={hydra} alt="Hydra logo" />
         <h1>Hydra</h1>
       </div>
-      <ul>
+      <ul className={classes.pages}>
         <li>
           <a href="#">about</a>
         </li>
@@ -25,7 +25,7 @@ const Navbar = () => {
         <button>Contact Us</button>
         <button>Join Hydra</button>
       </div>
-    </div>
+    </nav>
   );
 };
 
