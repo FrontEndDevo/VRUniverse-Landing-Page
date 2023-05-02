@@ -1,0 +1,12 @@
+@mixin responsive($checkpoint) {
+  @if $checkpoint == tablet {
+    @media (max-width: 1199px) and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $checkpoint == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
