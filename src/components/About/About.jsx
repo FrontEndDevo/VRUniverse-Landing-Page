@@ -19,8 +19,10 @@ const About = () => {
         </p>
       </div>
 
-      <div>
-        <img src={about} alt="about section" />
+      <div className={classes["hydra-VR"]}>
+        <div className={classes["L-H-S"]}>
+          <img src={about} alt="about section" />
+        </div>
         <div className={classes["R-H-S"]}>
           <h3>About</h3>
           <h5>hydra VR</h5>
@@ -39,8 +41,6 @@ const About = () => {
           <button>Let&apos;s get in touch</button>
         </div>
       </div>
-
-      <div></div>
     </section>
   );
 };

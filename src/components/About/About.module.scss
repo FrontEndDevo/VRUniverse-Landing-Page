@@ -1,5 +1,87 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
-.about{
-  
+.about {
+  color: $text_color;
+  background-image: url("../../assets/images/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  // For all p tags in About section:
+  p {
+    line-height: $wide_line_height;
+  }
+
+  .intro {
+    margin: 4rem 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    .L-H-S {
+      text-transform: uppercase;
+      h3 {
+        font-size: 3rem;
+      }
+      .arrow {
+        p {
+          font-size: 3rem;
+          font-weight: 100;
+        }
+        // arrow svg here:
+      }
+    }
+  }
+  .hydra-VR {
+    margin: 4rem 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    .L-H-S {
+      width: 500px;
+      height: 500px;
+      overflow: hidden;
+      border-top-left-radius: 200px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 200px;
+      border-bottom-left-radius: 100px;
+    }
+    .R-H-S {
+      h3 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 3rem;
+      }
+      h5 {
+        font-size: 3rem;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+      p {
+        margin: 2rem 0 1.2rem;
+      }
+      button {
+        text-transform: uppercase;
+        border-radius: 40px;
+        padding: 1rem 3rem;
+        background-color: transparent;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: $fast_transition;
+        color: $main_bg;
+        background: linear-gradient(
+          90deg,
+          $linear_gradient_one 0%,
+          $linear_gradient_two 100%
+        );
+
+        &:hover {
+          color: $text_color;
+          background: linear-gradient(
+            -90deg,
+            $linear_gradient_one 0%,
+            $linear_gradient_two 100%
+          );
+        }
+      }
+    }
+  }
 }
