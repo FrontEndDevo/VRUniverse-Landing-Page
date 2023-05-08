@@ -8,6 +8,7 @@
   // For all p tags in About section:
   p {
     line-height: $wide_line_height;
+    text-align: justify;
   }
 
   .intro {
@@ -144,12 +145,31 @@
         h5 {
           display: none;
         }
-        p {
-          text-align: justify;
-        }
         button {
           width: 100%;
         }
+      }
+    }
+  }
+  @include responsive(tablet) {
+    .intro {
+      grid-template-columns: none;
+      justify-items: center;
+      .L-H-S {
+        .arrow {
+          justify-content: center;
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+    .hydra-VR {
+      grid-template-columns: none;
+
+      .R-H-S {
+        text-align: center;
+        margin-top: 2rem;
       }
     }
   }
