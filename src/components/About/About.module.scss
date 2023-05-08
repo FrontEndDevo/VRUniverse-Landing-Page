@@ -14,6 +14,7 @@
     margin: 4rem 0;
     display: grid;
     align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     .L-H-S {
       text-transform: uppercase;
@@ -40,7 +41,8 @@
   .hydra-VR {
     margin: 4rem 0;
     display: grid;
-    align-items: center;
+    align-content: center;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     .L-H-S {
       width: 500px;
@@ -88,6 +90,65 @@
             $linear_gradient_one 0%,
             $linear_gradient_two 100%
           );
+        }
+      }
+    }
+  }
+  @include responsive(mobile) {
+    background-image: none;
+
+    p {
+      line-height: $wide_line_height;
+    }
+
+    .intro {
+      .L-H-S {
+        text-align: center;
+        h3 {
+          font-size: 2rem;
+        }
+        .arrow {
+          p {
+            font-size: 1rem;
+            margin: 0 auto;
+          }
+          svg {
+            display: none;
+          }
+        }
+      }
+      .R-H-S {
+        display: none;
+      }
+    }
+
+    .hydra-VR {
+      grid-template-columns: none;
+      justify-content: center;
+      .L-H-S {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+        width: 300px;
+        height: 300px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 50px;
+      }
+      .R-H-S {
+        h3 {
+          display: none;
+        }
+        h5 {
+          display: none;
+        }
+        p {
+          text-align: justify;
+        }
+        button {
+          width: 100%;
         }
       }
     }
