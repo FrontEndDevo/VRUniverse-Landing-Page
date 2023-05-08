@@ -1,5 +1,7 @@
 import classes from "./About.module.scss";
 import about from "../../assets/images/about.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 const About = () => {
   return (
     <section className={classes.about}>
@@ -8,6 +10,7 @@ const About = () => {
           <h3>Introduction</h3>
           <div className={classes.arrow}>
             <p>to hydra VR</p>
+            <FontAwesomeIcon icon={faArrowRightLong} />
           </div>
         </div>
         <p className={classes["R-H-S"]}>

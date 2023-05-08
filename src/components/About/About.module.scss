@@ -21,11 +21,19 @@
         font-size: 3rem;
       }
       .arrow {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
         p {
           font-size: 3rem;
           font-weight: 100;
         }
-        // arrow svg here:
+        svg {
+          font-size: 2rem;
+          color: $linear_gradient_two;
+          width: 20rem;
+          transform: scale(10, 1.5);
+        }
       }
     }
   }
