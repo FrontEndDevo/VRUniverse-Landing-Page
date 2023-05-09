@@ -1,10 +1,10 @@
 import About from "./components/About/About";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <About />
     </>
   );
