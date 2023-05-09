@@ -2,41 +2,142 @@
 @use "../../styles/mixins" as *;
 
 .header {
+  margin-bottom: 4rem;
+  background-image: url("../../assets/images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
   .VR {
+    display: grid;
+    grid-template-columns: 40vw auto 5vw;
+    justify-items: end;
+    align-items: end;
     .description {
+      margin: 25vh 0 4rem;
+
       h2 {
+        font-size: 4rem;
+        color: $text_color;
+        text-transform: capitalize;
         span {
+          // Apply linear-gradient property on text:
+          background: linear-gradient(
+            90deg,
+            $linear_gradient_two 80%,
+            $linear_gradient_one 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+
+          &:last-child {
+            background: linear-gradient(
+              270deg,
+              $linear_gradient_two 80%,
+              $linear_gradient_one 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+          }
         }
       }
 
       p {
+        color: $text_color;
+        margin: 2rem 0 4rem;
+        line-height: 2;
       }
 
       .buttons {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
         button {
+          text-transform: uppercase;
+          border-radius: 40px;
+          padding: 1rem 3rem;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          transition: $fast_transition;
+          background: linear-gradient(
+            90deg,
+            $linear_gradient_one 0%,
+            $linear_gradient_two 100%
+          );
+          color: $main_bg;
+
+          &:hover {
+            color: $text_color;
+            background: linear-gradient(
+              -90deg,
+              $linear_gradient_one 0%,
+              $linear_gradient_two 100%
+            );
+          }
         }
 
         svg {
+          color: $linear_gradient_two;
+          transform: scale(4, 2);
         }
       }
     }
 
     .header-img {
-      img {
-      }
+      height: 500px;
+      width: 550px;
+      overflow: hidden;
+      border-radius: 20%;
+      border-bottom-left-radius: 50%;
+      border: 25px solid rgb(0, 0, 0, 0.2);
     }
   }
 
   .info {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    background: radial-gradient(
+      50% 2900.76% at 50% 53.89%,
+      $bg_radial_gradient_two 0%,
+      $bg_radial_gradient_three 100%
+    );
+    border-radius: 200px;
+    color: $text_color;
+    padding: 4rem 1rem;
+
+    span {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $linear_gradient_two;
+        width: 1px;
+        height: 100%;
+      }
+    }
+
     .content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
       svg {
+        font-size: 4rem;
+        color: $linear_gradient_two;
       }
 
       .data {
         h4 {
-        }
-
-        p {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
         }
       }
     }

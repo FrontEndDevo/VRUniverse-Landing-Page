@@ -1,15 +1,19 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
 .navbar {
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  display: grid;
+  grid-template-columns: 20vw 50vw 30vw;
   align-items: center;
+  justify-items: center;
   color: $text_color;
+  text-transform: uppercase;
   .hydra {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     img {
       width: 100px;
       height: 100px;
@@ -34,7 +38,7 @@
 
   .pages {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
     font-weight: bold;
     a {
       &:hover {
