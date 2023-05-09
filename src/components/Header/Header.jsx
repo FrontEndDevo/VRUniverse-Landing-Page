@@ -27,13 +27,13 @@ const Header = () => {
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>
-        <div className={classes["header-img"]}>
+      <div className={classes["header-img"]}>
           <img src={header} alt="virtual reality" />
         </div>
       </div>
       <div>
         <div className={classes.info}>
-          <div className={classes.contact}>
+          <div className={classes.content}>
             <FontAwesomeIcon icon={faLocationDot} />
             <div className={classes.data}>
               <h4>Pay Us a Visit</h4>
@@ -41,7 +41,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className={classes.contact}>
+          <div className={classes.content}>
             <FontAwesomeIcon icon={faPhoneVolume} />
             <div className={classes.data}>
               <h4>Give Us a Call</h4>
@@ -49,7 +49,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className={classes.contact}>
+          <div className={classes.content}>
             <FontAwesomeIcon icon={faEnvelope} />
             <div className={classes.data}>
               <h4>Send Us a Message</h4>

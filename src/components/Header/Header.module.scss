@@ -1,6 +1,44 @@
 @use "../../styles/vars" as *;
 @use "../../styles/mixins" as *;
 
-.header{
-  
+.header {
+  .VR {
+    .description {
+      h2 {
+        span {
+        }
+      }
+
+      p {
+      }
+
+      .buttons {
+        button {
+        }
+
+        svg {
+        }
+      }
+    }
+
+    .header-img {
+      img {
+      }
+    }
+  }
+
+  .info {
+    .content {
+      svg {
+      }
+
+      .data {
+        h4 {
+        }
+
+        p {
+        }
+      }
+    }
+  }
 }
