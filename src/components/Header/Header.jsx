@@ -7,6 +7,24 @@ import {
   faLocationDot,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
+
+const contactUs = [
+  {
+    icon: faLocationDot,
+    title: "Pay Us a Visit",
+    method: "Union St, Seattle, WA 98101, United States",
+  },
+  {
+    icon: faPhoneVolume,
+    title: "Give Us a Call",
+    method: "(110) 1111-1010",
+  },
+  {
+    icon: faEnvelope,
+    title: "Send Us a Message",
+    method: "Contact@HydraVTech.com",
+  },
+];
 const Header = () => {
   return (
     <header className={classes.header}>
